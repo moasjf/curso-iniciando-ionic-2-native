@@ -1,0 +1,15 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+   <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>
+    Camera
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding class="camera-test">
+  <p>pagina da camera</p>
+  <button (click)="takePhoto()" block danger>Foto</button>
+
+  <img src="{{ image }}" [hidden]="!image">
+</ion-content>
